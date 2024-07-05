@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Selamat Datang di</h1>
+            <h2>SEHAT SENTOSA HOSPITAL</h2>
+            <p>Siap melayani anda dengan sepenuh hati</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <img src="dentist.jpg" alt="Dentist">
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>Sehat Sentosa Hospital adalah rumah sakit terkemuka yang menyediakan berbagai layanan kesehatan dengan teknologi terkini dan tenaga medis profesional. Untuk memenuhi kebutuhan pelayanan medis berkelas dunia bagi semua kalangan masyarakat di Indonesia, </p>
+            <p>Strategi bisnis Sehat Sentosa yang berdasarkan pada economies of scale (prinsip skala ekonomis) memungkinkan setiap unit rumah sakitnya untuk beroperasi dengan biaya yang lebih rendah. Dengan demikian, visi perusahaan untuk mewujudkan pelayanan kesehatan berkualitas internasional di Indonesia yang dilandasi dengan belas kasih ilahi dapat menjadi platform bagi Sehat Sentosa untuk meresponi transformasi sosial yang dinamis di Indonesia.</p>
+        </section>
+
+        <section class="info">
+            <div class="info-box">
+                <h3>0812-2200-0831</h3>
+                <p>EMERGENCY SERVICE</p><br>
+                <p>Hubungi kami ketika anda dalam kondisi darurat</p><br><br>
+                <button>Lihat Lainnya</button>
+            </div>
+            <div class="info-box">
+                <h3> Reservasi Pemeriksaan / Konsultasi </h3><br><br><br>
+                <p>Segera reservasi jadwal pemeriksaan atau konsultasi anda dibawah dengan dokter</p>
+                <button id="book-appointment">Reservasi</button>
+                <div id="appointment-form" style="display:none;">
+                    <form action="reservasi.php" method="post">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="phone">No Handphone:</label>
+                        <input type="text" id="phone" name="phone" required><br>
+                        <label for="date">Tanggal:</label>
+                        <input type="date" id="date" name="date" required><br>
+                        <label for="time">Waktu:</label>
+                        <input type="time" id="time" name="time" required><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div id="appointment-message"></div>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3>Jam Operasional</h3>
+                <p>Senin  : 24 Jam</p>
+                <p>Selasa : 24 Jam</p>
+                <p>Rabu   : 24 Jam</p>
+                <p>Kamis  : 24 Jam</p>
+                <p>Jumat  : 24 Jam</p>
+                <p>Sabtu  : 24 Jam</p><br>
+                <button>Kontak Kami</button>
+            </div>
+        </section><br><br><br><br><br><br>
+
+        <br><br><br><br>
+        <section class="schedule" id="schedule">
+            <h2>Jadwal Dokter Umum</h2>
+            <table>
+                <tr>
+                    <th>Hari</th>
+                    <th>Dokter</th>
+                    <th>Jam</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>Dr. Lee Jeno</td>
+                    <td>08:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Dr. Jong Jaehyun</td>
+                    <td>08:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Dr. Fajri Alvin</td>
+                    <td>09:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Dr. Na Jaemin</td>
+                    <td>09:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Jumat</td>
+                    <td>Dr. Jake Sim</td>
+                    <td>09:00 - 11:00</td>
+                </tr>
+                <tr>
+                    <td>Sabtu</td>
+                    <td>Dr. Noudhia Yaya</td>
+                    <td>10:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>Minggu</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table><br>
+            <a href="hasilJadwal.php">Lihat Janji Temu</a><br>
+        </section><br><br><br><br><br><br>
+        
+        <br><br><br><br>
+        <section class="contacts" id="contacts">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Alamat :</strong> Jl. Uwade No. 251, Yogyakarta</p>
+                <p><strong>Telepon:</strong> 0823-5757-0088</p>
+                <p><strong>Email  :</strong> contact@skylarhospital.com</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
